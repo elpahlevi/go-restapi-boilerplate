@@ -7,8 +7,6 @@ This is a simple implementation of REST-API using Golang and several packages (E
   <pre><code>docker-compose up -d</code></pre>
   >Note: The process will running into the background because we add option <code>-d (detach mode)</code>
 - The server can be accessed through port <code>8080</code>
-- Available Endpoint:
-  - <code>/api/students (GET)</code>
 
 ### 2. Local
 > Prerequisites: Make sure you've already installed Golang and PostgreSQL on your system.
@@ -26,5 +24,13 @@ This is a simple implementation of REST-API using Golang and several packages (E
 - Type below to execute the app:
   <pre><code>go run main.go</code></pre>
 - Server can be accessed through port <code>8080</code>
-- Available Endpoint:
+
+### Available Endpoints:
   - <code>/api/students (GET)</code>
+  - <code>/api/students (POST)</code>
+    <pre>
+    Request body:
+    <code>
+    {"name": "user1"}
+    </code>
+    </pre>
