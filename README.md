@@ -1,6 +1,6 @@
 ## Simple REST-API Boilerplate
 
-This is a simple implementation of REST-API using Golang and several packages (Echo and GORM). By default, I use PostgreSQL database from Docker Images. There are two ways to run this app, using Docker or run manually on your system. If Docker is available into your system, use a Docker instead.
+This is a simple implementation of REST-API using Golang and several packages (Echo and GORM). By default, I use PostgreSQL database from Docker Images. There are two ways to run this app, using Docker or run manually on your system. I suggest to use Docker if possible.
 
 ### 1. Docker
 - Go to directory folder and type:
