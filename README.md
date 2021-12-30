@@ -28,11 +28,9 @@ This is a simple implementation of REST-API using Golang and several packages (E
 - Server can be accessed through port <code>8080</code>
 
 ### Available Endpoints:
-  - <code>/api/students (GET)</code>
-  - <code>/api/students (POST)</code>
-    <pre>
-    Request body:
-    <code>
-    {"name": "user1"}
-    </code>
-    </pre>
+>Note: All endpoints start from prefix "/api"
+
+| Endpoints | Method |    Request Body   |    Description   |
+|-----------|:------:|:-----------------:|:----------------:|
+| /student  | GET    |         -         | Get all students |
+| /student  | POST   | {"name": "user1"} | Add a student    |

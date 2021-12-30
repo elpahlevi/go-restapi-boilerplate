@@ -5,6 +5,6 @@ CREATE TABLE students (
 
 INSERT INTO students(name)
 VALUES
-('Reza Pahlevi'),
+('James Damon'),
 ('Jon Snow'),
 ('Matt Solar');
