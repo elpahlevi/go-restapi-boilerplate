@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/elpahlevi/go-restapi-boilerplate/model"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -47,6 +48,7 @@ func ConnectPg() error {
 	if err != nil {
 		return err
 	}
+	db.AutoMigrate(&model.Students{})
 	return nil
 }
 

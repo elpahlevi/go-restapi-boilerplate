@@ -9,11 +9,6 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-func GetIndex(c echo.Context) error {
-	welcomeText := "Welcome to go-restapi-boilerplate. \nTo continue, access the endpoint /api/students"
-	return c.String(http.StatusOK, welcomeText)
-}
-
 func GetStudents(c echo.Context) error {
 	db := config.DBManager()
 	students := new([]model.Students)
